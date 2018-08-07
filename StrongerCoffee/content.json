@@ -1,0 +1,12 @@
+{
+  "Format": "1.0",
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/ObjectInformation",
+      "Fields": {
+        395: { 1: "500", 8: "960"},
+      }
+    }
+  ]
+}
