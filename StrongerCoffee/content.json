@@ -1,12 +1,52 @@
 {
-  "Format": "1.0",
+  "Format": "1.3",
+  "ConfigSchema": {
+    "duration": {"AllowValues": "120, 240, 480, 960"}
+  },
+
   "Changes": [
     {
       "Action": "EditData",
       "Target": "Data/ObjectInformation",
       "Fields": {
-        395: { 1: "500", 8: "960"},
+        395: { 1: "150", 8: "120"},
+      },
+      "When": {
+        "duration": "120"
       }
-    }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/ObjectInformation",
+      "Fields": {
+        395: { 1: "300", 8: "240"},
+      },
+      "When": {
+        "duration": "240"
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/ObjectInformation",
+      "Fields": {
+        395: { 1: "600", 8: "480"},
+      },
+      "When": {
+        "duration": "480"
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/ObjectInformation",
+      "Fields": {
+        395: { 1: "1200", 8: "960"},
+      },
+      "When": {
+        "duration": "960"
+      }
+    },
   ]
 }
